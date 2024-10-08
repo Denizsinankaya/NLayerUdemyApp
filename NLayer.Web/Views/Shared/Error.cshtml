@@ -1,0 +1,10 @@
+﻿@if (Model.Errors.Any())
+{
+    <div class="alert alert-danger">
+        @foreach (var item in Model.Errors)
+        {
+            <p>@item</p>
+        }
+    </div>
+}
+
